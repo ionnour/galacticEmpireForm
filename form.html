@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+
+    <title></title>
+  </head>
+  <body>
+    <main id="main" class="container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-offset-3 col-lg-6">
+
+          <div class="idiv">
+            <img src="logo.png" class="img-responsive" alt="">
+          </div>
+
+          <div class="m-b-md text-center">
+            <h1 id="title">Apply for Empire</h1>
+            <p id="description" class="description text-center">
+              GET ON THE DARCK SIDE
+            </p>
+          </div>
+
+          <form id="survey-form" name="survey-form" action="form.html" method="get">
+            <fieldset>
+              <label for="name" id="name-label">
+                Name *
+                <input type="text" id="name" name="name" placeholder="Enter your name (required)" required value="">
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <label for="email" id="email-label">
+                Email *
+                <input type="email" id="email" placeholder="Enter your email (required)" required name="email" value="">
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <label for="number" id="number-lebel">
+                Age *
+                <input type="number" id="number" name="number"  min="8" max="112" placeholder="Enter your age (required)" required value="">
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <label for="dropdown">
+              Which role you wish to apply? *
+              <select class="mt-xs" id="dropdown" name="dropdown">
+                <option value="student">Jedi</option>
+                <option value="ftlob">Solder</option>
+                <option value="ftLerner">Commander</option>
+                <option value="notSaying">Pilot</option>
+                <option value="other">Other</option>
+              </select>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <div class="labels">
+                How likely is that you would recommend Empire to a friend? *
+              </div>
+              <label for="" class="m-b-xs">
+                <input type="radio" name="survey-form-gender" value="definitely">Definitely
+              </label>
+              <label for="" class="m-b-xs">
+                <input type="radio" name="survey-form-gender" value="maybe">Maybe
+              </label>
+              <label for="" class="m-b-xs">
+                <input type="radio" name="survey-form-gender" value="notSure">Not Sure
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <label for="survey-form-like">
+                What do you like most in Empire:
+                <select id="survey-form-like" name="survey-form-like" class="m-t-xs">
+                  <option value="challenges" selected>Dictatorship</option>
+                  <option value="projects">War</option>
+                  <option value="community">Pew Pew</option>
+                  <option value="openSource">Big spheric spaceships</option>
+                </select>
+              </label>
+            </fieldset>
+
+            <fieldset>
+               <div class="labels">
+                  Things that should be improved in the future (Check all that apply):
+               </div>
+               <label for="survey-form-improve1" class="m-b-xs">
+                 <input type="checkbox" id="survey-form-improve1" value="lightSowrds">
+                 Light Sowrds
+               </label>
+               <label for="survey-form-improve2" class="m-b-xs">
+                 <input type="checkbox" id="survey-form-improve2" value="beamGuns">
+                 BeamGuns
+               </label>
+               <label for="survey-form-improve3" class="m-b-xs">
+                 <input type="checkbox" id="survey-form-improve3" value="spaceships">
+                 Spaceships
+               </label>
+               <label for="survey-form-improve4" class="m-b-xs">
+                 <input type="checkbox" id="survey-form-improve4" value="uniforms">
+                 Uniform
+               </label>
+               <label for="survey-form-improve5" class="m-b-xs">
+               <input type="checkbox" id="survey-form-improve5" value="darckForce">
+                Darck Force
+               </label>
+            </fieldset>
+
+            <fieldset>
+              <label for="survey-form-suggestions">
+                Any Comments or Suggestions?
+                <textarea id="survey-form-suggestions" maxlength="194"></textarea>
+              </label>
+            </fieldset>
+
+            <button id="submit" type="submit" class="btn">Submit the form</button>
+          </form>
+
+          <div class="copyright m-t-sm">
+            <div><a href="http://www.adeleroyer.fr" title="Adèle Royer">Galactic Empire</a> with <i class="glyphicon glyphicon-heart"></i></div>
+         </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  </body>
+</html>
